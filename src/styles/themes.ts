@@ -1,23 +1,21 @@
-
 export const firstTheme = {
-  name: 'first',
+  name: "first",
   colors: {
-    primary: '#F04E98',
-    highLight: '#00C1D4',
-    black: '#2D2D2D',
-    background: '#4D4F4F',
-    fontColor: '#FFF',
-  }
-}
+    primary: "#202024",
+    highLight: "#A883FF",
+    contrast: "#FFF",
+    background: "#121214",
+    fontColor: "#E1E1E6",
+  },
+};
 
 export const secondTheme = {
-  name: 'second',
+  name: "second",
   colors: {
-    primary: '#F04E98',
-    highLight: '#00C1D4',
-    black: '#000',
-    background: '#FFF',
-    fontColor: '#4D4F4F',
-  }
-}
-
+    primary: "#4C5B57",
+    highLight: "#A51C30",
+    contrast: "#000",
+    background: "#FFF",
+    fontColor: "#13100B",
+  },
+};

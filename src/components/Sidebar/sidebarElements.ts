@@ -21,7 +21,7 @@ export const CloseIcon = styled(FaTimes)`
     color: ${props => props.theme.colors.fontColor};
 
     &:hover {
-        color: ${props => props.theme.colors.primary};
+        color: ${props => props.theme.colors.highLight};
         transition: 0.2s ease-in-out;
     }
 `
@@ -64,7 +64,7 @@ export const SidebarLink = styled(LinkS)`
     cursor: pointer;
 
     &:hover {
-        color: ${props => props.theme.colors.primary};
+        color: ${props => props.theme.colors.highLight};
         font-weight: bold;
     }
 `

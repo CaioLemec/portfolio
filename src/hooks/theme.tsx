@@ -12,7 +12,7 @@ interface Theme {
   colors: {
     primary: string,
     highLight: string,
-    black: string,
+    contrast: string,
     background: string,
     fontColor: string,
   }

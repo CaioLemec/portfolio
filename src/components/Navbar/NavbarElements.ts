@@ -29,7 +29,7 @@ export const NavbarContainer = styled.nav`
     max-width: 1100px;
 `
 
-export const NavLogo = styled(LinkR)`
+export const NavLogo = styled(LinkR) && styled(LinkS)`
     color: ${props => props.theme.colors.fontColor};
     justify-self: flex-start;
     cursor: pointer;
@@ -45,7 +45,7 @@ export const MobileIcon = styled.div`
     display: none;
 
     &:hover {
-        color: ${props => props.theme.colors.primary};
+        color: ${props => props.theme.colors.highLight};
     }
 
     @media screen and (max-width: 768px) {
@@ -89,9 +89,9 @@ export const NavLinks = styled(LinkS)`
         border-bottom: 3px solid ${props => props.theme.colors.fontColor};
     }
 
-    &:hover {
-        border-bottom: 3px solid ${props => props.theme.colors.primary};
-        color: ${props => props.theme.colors.primary};
+    &:hover, &.isActive {
+        border-bottom: 3px solid ${props => props.theme.colors.highLight};
+        color: ${props => props.theme.colors.highLight};
         font-weight: bold;
     }
 `
