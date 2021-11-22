@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import IndexSection from '../components/IndexSection';
 import Navbar from '../components/Navbar';
 import SectionContact from '../components/SectionContact';
 import SectionPortfolio from '../components/SectionPortfolio';
@@ -17,7 +16,6 @@ const Home = () => {
         <>
          <Sidebar isOpen={isOpen} handleToggle={handleToggle} />
          <Navbar handleToggle={handleToggle} />   
-         <IndexSection />
          <SectionAbout />
          <SectionPortfolio />
          <SectionContact />

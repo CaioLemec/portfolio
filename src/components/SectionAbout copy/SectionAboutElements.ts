@@ -41,62 +41,79 @@ export const VideoBg = styled.video`
 export const DescriptionAboutWrapper = styled.div`
   margin-top: 80px;
   color: ${(props) => props.theme.colors.fontColor};
-  flex: 1;
+  flex: 2;
   flex-direction: column;
   height: 100%;
   display: flex;
+  align-items: center;
   justify-content: center;
   padding: 0 30px;
   z-index: 2;
-
-  @media screen and (max-width: 871px) {
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media screen and (max-width: 1000px) {
-    flex: 2;
-  }
-
 `;
 
 export const DescriptionTitle = styled.div`
   color: ${(props) => props.theme.colors.fontColor};
   font-size: 4rem;
-  text-align: left;
+  text-align: center;
   font-weight: bold;
 
-  @media screen and (max-width: 1173px) {
+  @media screen and (max-width: 768px) {
     font-size: 3rem;
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 480px) {
     font-size: 2rem;
   }
+`;
 
-  @media screen and (max-width: 375px) {
+export const DescriptionTxt = styled.div`
+  margin-top: 2rem;
+  color: ${(props) => props.theme.colors.fontColor};
+  font-size: 1.5rem;
+  text-align: center;
+  max-width: 600px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+
+  @media screen and (max-width: 480px) {
     font-size: 1rem;
   }
 `;
 
-export const SubDescriptionTitle = styled.div`
+export const DownloadResumeWrapper = styled.div`
+  margin-top: 1rem;
+  display: flex;
+  font-size: 30px;
   color: ${(props) => props.theme.colors.fontColor};
-  font-size: 2rem;
-  opacity: 0.8;
-  text-align: left;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+`;
+
+export const LinkDownloadResume = styled.a`
+  color: ${(props) => props.theme.colors.fontColor};
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  background: ${(props) => props.theme.colors.highLight};
   font-weight: bold;
-  margin: 10px 0;
+  cursor: pointer;
+  transition: filter 0.2s ease-in-out;
 
-  @media screen and (max-width: 1000px) {
-    font-size: 1.5rem;
+  &:first-child {
+    margin-right: 1rem;
   }
 
-  @media screen and (max-width: 500px) {
-    font-size: 1rem;
+  &:active {
+    transform: scale(0.9);
   }
 
-  @media screen and (max-width: 375px) {
-    font-size: 0.8rem;
+  &:hover {
+    filter: brightness(0.8);
+    color: ${(props) => props.theme.colors.contrast};
+    font-weight: bold;
   }
 `;
 
@@ -110,10 +127,6 @@ export const MyPictureWrapper = styled.div`
   align-items: center;
   justify-content: center;
   padding: 0 30px;
-
-  @media screen and (max-width: 871px) {
-    display: none;
-  }
 `;
 
 export const MyPictureContainer = styled.div`

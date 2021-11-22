@@ -3,7 +3,6 @@ import video_bv from "../../videos/video_bv.mp4";
 import video_wv from "../../videos/video_wv.mp4";
 import { ThemeContext } from "styled-components";
 import { useContext } from "react";
-import SocialBtn from "./SocialBtn";
 
 import {
   AboutContainer,
@@ -12,12 +11,13 @@ import {
   VideoBg,
   DescriptionAboutWrapper,
   DescriptionTitle,
-  SubDescriptionTitle,
+  DescriptionTxt,
+  DownloadResumeWrapper,
+  LinkDownloadResume,
   MyPictureWrapper,
   MyPictureContainer,
   MyPicture,
 } from "./SectionAboutElements";
-import { DynamicTxt } from "./DynamicTxt";
 
 const SectionAbout = () => {
   const theme = useContext(ThemeContext);
@@ -33,10 +33,25 @@ const SectionAbout = () => {
 
       <MaxWidthLimitWrapper>
         <DescriptionAboutWrapper>
-          <SubDescriptionTitle>Hi,</SubDescriptionTitle>
-          <DescriptionTitle>I'm Caio Lemec</DescriptionTitle>
-          <SubDescriptionTitle><DynamicTxt/></SubDescriptionTitle>
-          <SocialBtn />
+          <DescriptionTitle>Caio Lemec</DescriptionTitle>
+          <DescriptionTxt>
+            I am a passionate self-taught front-end developer. I'm from Brazil,
+            living in Rio de Janeiro and currently work as an intern in software
+            developer. I started my career in engineering and marketing, but
+            found in programming the passion I was looking for to move forward.
+          </DescriptionTxt>
+          <DownloadResumeWrapper>
+            <LinkDownloadResume>
+              {" "}
+              {/*disponibilizar download*/}
+              pt-BR
+            </LinkDownloadResume>
+            <LinkDownloadResume>
+              {" "}
+              {/*disponibilizar download*/}
+              en-US
+            </LinkDownloadResume>
+          </DownloadResumeWrapper>
         </DescriptionAboutWrapper>
         <MyPictureWrapper>
           <MyPictureContainer>

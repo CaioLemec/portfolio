@@ -46,19 +46,6 @@ const Navbar = ({ handleToggle }: NavBarProps) => {
 
             <NavItem>
               <NavLinks
-                to="home"
-                smooth={true}
-                duration={500}
-                spy={true}
-                offset={-80}
-                activeClass="isActive"
-              >
-                Resume
-              </NavLinks>
-            </NavItem>
-
-            <NavItem>
-              <NavLinks
                 to="about"
                 smooth={true}
                 duration={500}

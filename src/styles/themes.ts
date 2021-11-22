@@ -12,7 +12,7 @@ export const firstTheme = {
 export const secondTheme = {
   name: "second",
   colors: {
-    primary: "#4C5B57",
+    primary: "#DCDCDC",
     highLight: "#A51C30",
     contrast: "#000",
     background: "#FFF",
