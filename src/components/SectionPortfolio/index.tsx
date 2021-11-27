@@ -5,6 +5,7 @@ import aufood from "../../images/4.png";
 import omini from "../../images/5.png";
 import crypto from "../../images/6.png";
 import Hover from "react-3d-hover";
+import { Route, Link, BrowserRouter as Router } from "react-router-dom";
 
 import {
   PortfolioContainer,
@@ -13,7 +14,10 @@ import {
   PortfolioTitle,
   PortfolioGrid,
   PortfolioCard,
+  CardDescription,
   CardTitle,
+  CardButton,
+  CardButtonWrapper,
   CardImg,
 } from "./SectionPortfolioElements";
 
@@ -25,38 +29,92 @@ const SectionPortfolio = () => {
           <PortfolioTitle>Last projects...</PortfolioTitle>
           <PortfolioGrid>
             <PortfolioCard>
-              <CardTitle>Aufood</CardTitle>
+              <CardDescription>
+                <CardTitle>See at Github</CardTitle>
+                <CardButtonWrapper
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://github.com/CaioLemec/Aufood"
+                >
+                  <CardButton />
+                </CardButtonWrapper>
+              </CardDescription>
               <Hover scale={1.1} perspective={900} speed={500}>
                 <CardImg src={aufood} />
               </Hover>
             </PortfolioCard>
             <PortfolioCard>
-              <CardTitle>Omini</CardTitle>
-              <Hover scale={1.2} perspective={900} speed={500}>
+              <CardDescription>
+                <CardTitle>See at Github</CardTitle>
+                <CardButtonWrapper
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://github.com/CaioLemec/Omni-tech"
+                >
+                  <CardButton />
+                </CardButtonWrapper>
+              </CardDescription>
+              <Hover scale={1.1} perspective={900} speed={500}>
                 <CardImg src={omini} />
               </Hover>
             </PortfolioCard>
             <PortfolioCard>
-              <CardTitle>Crypto</CardTitle>
-              <Hover scale={1.2} perspective={900} speed={500}>
+              <CardDescription>
+                <CardTitle>See at Github</CardTitle>
+                <CardButtonWrapper
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://github.com/CaioLemec/crypto-monitor"
+                >
+                  <CardButton />
+                </CardButtonWrapper>
+              </CardDescription>
+              <Hover scale={1.1} perspective={900} speed={500}>
                 <CardImg src={crypto} />
               </Hover>
             </PortfolioCard>
             <PortfolioCard>
-              <CardTitle>Association Game</CardTitle>
-              <Hover scale={1.2} perspective={900} speed={500}>
+              <CardDescription>
+                <CardTitle>See at Github</CardTitle>
+                <CardButtonWrapper
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://github.com/CaioLemec/association-game"
+                >
+                  <CardButton />
+                </CardButtonWrapper>
+              </CardDescription>
+              <Hover scale={1.1} perspective={900} speed={500}>
                 <CardImg src={game} />
               </Hover>
             </PortfolioCard>
             <PortfolioCard>
-              <CardTitle>Chat App</CardTitle>
-              <Hover scale={1.2} perspective={900} speed={500}>
+              <CardDescription>
+                <CardTitle>See at Github</CardTitle>
+                <CardButtonWrapper
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://github.com/CaioLemec/chat_app"
+                >
+                  <CardButton />
+                </CardButtonWrapper>
+              </CardDescription>
+              <Hover scale={1.1} perspective={900} speed={500}>
                 <CardImg src={chat} />
               </Hover>
             </PortfolioCard>
             <PortfolioCard>
-              <CardTitle>Web Scrapper</CardTitle>
-              <Hover scale={1.2} perspective={900} speed={500}>
+              <CardDescription>
+                <CardTitle>See at Github</CardTitle>
+                <CardButtonWrapper
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://github.com/CaioLemec/web_scraper"
+                >
+                  <CardButton />
+                </CardButtonWrapper>
+              </CardDescription>
+              <Hover scale={1.1} perspective={900} speed={500}>
                 <CardImg src={wb} />
               </Hover>
             </PortfolioCard>

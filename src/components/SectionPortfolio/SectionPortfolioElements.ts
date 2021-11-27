@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { FaArrowRight } from 'react-icons/fa'
 
 export const PortfolioContainer = styled.div`
   background: ${(props) => props.theme.colors.background};
@@ -44,37 +45,94 @@ export const PortfolioGrid = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
   height: 100%;
-  gap: 20px;
+  gap: 40px;
 
   @media screen and (max-width: 900px) {
     grid-template-columns: 1fr 1fr;
   }
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 555px) {
     grid-template-columns: 1fr;
   }
 `;
 
 export const PortfolioCard = styled.div`
-  background-color: ${(props) => props.theme.colors.primary};
-  border-radius: 20px;
+background: rgba( 255, 255, 255, 0.15 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 8px );
+-webkit-backdrop-filter: blur( 8px );
+border-radius: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+position: relative;
+box-shadow: 0px 0px 22px 2px ${(props) => props.theme.colors.primary};
+`;
+
+export const CardDescription = styled.div`
+  position: absolute;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  height: 15%;
+  bottom: 0;
+  border-radius: 0 0 20px 20px;
+  background: rgba(255, 255, 255, 0.15);
+  z-index: 2;
 `;
 
 export const CardTitle = styled.div`
   color: ${(props) => props.theme.colors.fontColor};
-  margin-top: 1rem;
-  font-size: 2.5rem;
-  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 20px 0;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
-  @media screen and (max-width: 1300px) {
-    font-size: 1.5rem;
+  @media screen and (max-width: 900px) {
+    font-size: 1rem;
   }
-`;
+
+  @media screen and (max-width: 555px) {
+    font-size: 0.9rem;
+  }
+
+  @media screen and (max-width: 375px) {
+    font-size: 0.8rem;
+  }
+`
+
+export const CardButtonWrapper = styled.a`
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    color: ${props => props.theme.colors.fontColor};
+
+    &:hover {
+        background-color: ${props => props.theme.colors.highLight};
+        transition: 0.2s ease-in-out;
+    }
+    
+    &:active {
+      transform: scale(1.05)
+    } 
+`
+
+export const CardButton = styled(FaArrowRight)`
+  width: 40%;
+  height: 40%;
+`
 
 export const CardImg = styled.img`
-    max-width: 100%;
+  max-width: 100%;
 `;
