@@ -23,7 +23,7 @@ const ThemeContext = createContext<ThemeContextData>({} as ThemeContextData);
 export const useTheme = () => useContext(ThemeContext);
 
 export const CustomThemeProvider: React.FC = ({ children }) => {
-  const [theme, setTheme] = useState<Theme>(firstTheme);
+  const [theme, setTheme] = useState<Theme>(secondTheme);
 
   const toggleTheme = useCallback(() => {
     if (theme.name === 'first'){

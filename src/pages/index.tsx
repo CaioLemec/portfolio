@@ -4,6 +4,7 @@ import SectionContact from '../components/SectionContact';
 import SectionPortfolio from '../components/SectionPortfolio';
 import SectionAbout from '../components/SectionAbout';
 import Sidebar from '../components/Sidebar';
+import Footer from '../components/Footer';
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -19,6 +20,7 @@ const Home = () => {
          <SectionAbout />
          <SectionPortfolio />
          <SectionContact />
+         <Footer />
         </>
     )
 }

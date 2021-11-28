@@ -14,7 +14,7 @@ export const secondTheme = {
   colors: {
     primary: "#DCDCDC",
     highLight: "#A51C30",
-    contrast: "#000",
+    contrast: "#FFF",
     background: "#FFF",
     fontColor: "#13100B",
   },

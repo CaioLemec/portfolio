@@ -5,7 +5,7 @@ import aufood from "../../images/4.png";
 import omini from "../../images/5.png";
 import crypto from "../../images/6.png";
 import Hover from "react-3d-hover";
-import { Route, Link, BrowserRouter as Router } from "react-router-dom";
+import { FaArrowRight } from "react-icons/fa";
 
 import {
   PortfolioContainer,
@@ -16,7 +16,6 @@ import {
   PortfolioCard,
   CardDescription,
   CardTitle,
-  CardButton,
   CardButtonWrapper,
   CardImg,
 } from "./SectionPortfolioElements";
@@ -36,7 +35,7 @@ const SectionPortfolio = () => {
                   target="_blank"
                   href="https://github.com/CaioLemec/Aufood"
                 >
-                  <CardButton />
+                  <FaArrowRight className="icon-button"  size ={25}/>
                 </CardButtonWrapper>
               </CardDescription>
               <Hover scale={1.1} perspective={900} speed={500}>
@@ -51,7 +50,7 @@ const SectionPortfolio = () => {
                   target="_blank"
                   href="https://github.com/CaioLemec/Omni-tech"
                 >
-                  <CardButton />
+                  <FaArrowRight className="icon-button"  size ={25}/>
                 </CardButtonWrapper>
               </CardDescription>
               <Hover scale={1.1} perspective={900} speed={500}>
@@ -66,7 +65,7 @@ const SectionPortfolio = () => {
                   target="_blank"
                   href="https://github.com/CaioLemec/crypto-monitor"
                 >
-                  <CardButton />
+                  <FaArrowRight className="icon-button"  size ={25}/>
                 </CardButtonWrapper>
               </CardDescription>
               <Hover scale={1.1} perspective={900} speed={500}>
@@ -81,7 +80,7 @@ const SectionPortfolio = () => {
                   target="_blank"
                   href="https://github.com/CaioLemec/association-game"
                 >
-                  <CardButton />
+                  <FaArrowRight className="icon-button"  size ={25}/>
                 </CardButtonWrapper>
               </CardDescription>
               <Hover scale={1.1} perspective={900} speed={500}>
@@ -96,7 +95,7 @@ const SectionPortfolio = () => {
                   target="_blank"
                   href="https://github.com/CaioLemec/chat_app"
                 >
-                  <CardButton />
+                  <FaArrowRight className="icon-button"  size ={25}/>
                 </CardButtonWrapper>
               </CardDescription>
               <Hover scale={1.1} perspective={900} speed={500}>
@@ -111,7 +110,7 @@ const SectionPortfolio = () => {
                   target="_blank"
                   href="https://github.com/CaioLemec/web_scraper"
                 >
-                  <CardButton />
+                  <FaArrowRight className="icon-button"  size ={25}/>
                 </CardButtonWrapper>
               </CardDescription>
               <Hover scale={1.1} perspective={900} speed={500}>

@@ -30,7 +30,7 @@ const Navbar = ({ handleToggle }: NavBarProps) => {
       <Nav>
         <NavbarContainer>
           <NavLogo
-            to="home"
+            to="about"
             smooth={true}
             duration={500}
             spy={true}

@@ -1,15 +1,56 @@
-import React from 'react'
+import React from "react";
 
 import {
-    HeroContainer
-} from './SectionContactElements';
+  ContactContainer,
+  MaxWidthLimitWrapper,
+  ContactContent,
+  ContactImgWrapper,
+  ContactImg,
+  ContactFormWrapper,
+  ContactForm,
+  ContactInputTitle,
+  ContactInput,
+  ContactArea,
+  ContactSubmitButton
+} from "./SectionContactElements";
 
 const SectionContact = () => {
-    return (
-        <HeroContainer id="contact">
-            Contact
-        </HeroContainer>
-    )
-}
+  return (
+    <ContactContainer id="contact">
+      <MaxWidthLimitWrapper>
+        <ContactContent>
 
-export default SectionContact
+          <ContactImgWrapper>
+          <ContactImg />
+          </ContactImgWrapper>
+
+          <ContactFormWrapper>
+          <ContactForm>
+
+            <ContactInputTitle>
+              Full Name*
+            </ContactInputTitle>
+            <ContactInput />
+
+            <ContactInputTitle>
+              Email*
+            </ContactInputTitle>
+            <ContactInput />
+
+            <ContactInputTitle>
+              Message*
+            </ContactInputTitle>
+            <ContactArea />
+
+            <ContactSubmitButton />
+            
+          </ContactForm>
+          </ContactFormWrapper>
+
+        </ContactContent>
+      </MaxWidthLimitWrapper>
+    </ContactContainer>
+  );
+};
+
+export default SectionContact;

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { FaArrowRight } from 'react-icons/fa'
 
 export const PortfolioContainer = styled.div`
   background: ${(props) => props.theme.colors.background};
@@ -57,17 +56,17 @@ export const PortfolioGrid = styled.div`
 `;
 
 export const PortfolioCard = styled.div`
-background: rgba( 255, 255, 255, 0.15 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 8px );
--webkit-backdrop-filter: blur( 8px );
-border-radius: 20px;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-position: relative;
-box-shadow: 0px 0px 22px 2px ${(props) => props.theme.colors.primary};
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0px 0px 22px 2px ${(props) => props.theme.colors.primary};
 `;
 
 export const CardDescription = styled.div`
@@ -105,34 +104,36 @@ export const CardTitle = styled.div`
   @media screen and (max-width: 375px) {
     font-size: 0.8rem;
   }
-`
+`;
 
 export const CardButtonWrapper = styled.a`
-    cursor: pointer;
-    width: 100%;
-    height: 100%;
-    border-radius: 0 0 20px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex: 1;
-    color: ${props => props.theme.colors.fontColor};
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  color: ${(props) => props.theme.colors.fontColor};
 
-    &:hover {
-        background-color: ${props => props.theme.colors.highLight};
-        transition: 0.2s ease-in-out;
+
+
+  &:hover {
+    background-color: ${(props) => props.theme.colors.highLight};
+    transition: 0.2s ease-in-out;
+
+    .icon-button {
+      color: ${(props) => props.theme.colors.contrast};
     }
-    
-    &:active {
-      transform: scale(1.05)
-    } 
-`
+  }
 
-export const CardButton = styled(FaArrowRight)`
-  width: 40%;
-  height: 40%;
-`
+  &:active {
+    transform: scale(1.05);
+  }
+`;
 
 export const CardImg = styled.img`
   max-width: 100%;
 `;
+
