@@ -61,7 +61,14 @@ export const ContactInputTitle = styled.h3`
 
 export const ContactInput = styled.input``;
 
+export const ErrorText = styled.p`
+  color: ${(props) => props.theme.colors.fontColor};
+`;
+
 export const ContactArea = styled.textarea``;
 
-export const ContactSubmitButton = styled.button``;
+export const SubmitInput = styled.input`
+  margin: 1rem 0;
+  color: ${(props) => props.theme.colors.fontColor};
+`;
 
