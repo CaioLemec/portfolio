@@ -20,7 +20,6 @@ const Home = () => {
          <SectionAbout />
          <SectionPortfolio />
          <SectionContact />
-         <Footer />
         </>
     )
 }
