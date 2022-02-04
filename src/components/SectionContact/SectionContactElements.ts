@@ -22,7 +22,6 @@ export const ContactContent = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: red;
 `;
 
 export const ContactImgWrapper = styled.div`
@@ -44,31 +43,76 @@ export const ContactFormWrapper = styled.div`
   flex: 1;
   width: 100%;
   height: 100%;
-  background-color: blue;
 `;
 
 export const ContactForm = styled.form`
-  background-color: red;
   display: flex;
   flex-direction: column;
   justify-content: center;
 `;
 
-export const ContactInputTitle = styled.h3`
-  margin: 1rem 0;
+export const ContactInputTitle = styled.h1`
+  font-size: 1.25rem;
+  margin: 0.525rem 0;
   color: ${(props) => props.theme.colors.fontColor};
 `;
 
-export const ContactInput = styled.input``;
+export const ContactInput = styled.input`
+  background: rgba(255, 255, 255, 0.15);
+  width: 100%;
+  border: 0;
+  height: 3rem;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  color: ${(props) => props.theme.colors.fontColor};
+  box-shadow: 0px 0px 22px 2px ${(props) => props.theme.colors.primary};
+`;
 
 export const ErrorText = styled.p`
-  color: ${(props) => props.theme.colors.fontColor};
+  color: red;
+  margin: 0.45rem 0.45rem;
+  font-weight: 400;
+  font-size: 0.8rem;
+
+  span {
+    margin-left: 0.125rem;
+    color: red;
+    font-size: 1rem;
+  }
 `;
 
-export const ContactArea = styled.textarea``;
+export const ContactArea = styled.textarea`
+  background: rgba(255, 255, 255, 0.15);
+  width: 30rem;
+  border: 0;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  resize: none;
+  min-height: 10rem;
+  color: ${(props) => props.theme.colors.fontColor};
+  box-shadow: 0px 0px 22px 2px ${(props) => props.theme.colors.primary};
+`;
 
 export const SubmitInput = styled.input`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 0;
   margin: 1rem 0;
-  color: ${(props) => props.theme.colors.fontColor};
+  height: 3rem;
+  border-radius: 0.25rem;
+  color: ${(props) => props.theme.colors.contrast};
+  background: ${(props) => props.theme.colors.highLight};
+  transition: 0.2s;
+
+  &:not(:disabled):hover {        // if button !disable do Hover.
+    filter: brightness(0.8);
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
 `;
 
