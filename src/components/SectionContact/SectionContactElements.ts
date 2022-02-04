@@ -69,14 +69,14 @@ export const ContactInput = styled.input`
 `;
 
 export const ErrorText = styled.p`
-  color: red;
+  color: ${(props) => props.theme.colors.fontColor};
   margin: 0.45rem 0.45rem;
   font-weight: 400;
   font-size: 0.8rem;
 
   span {
+    color: ${(props) => props.theme.colors.highLight};
     margin-left: 0.125rem;
-    color: red;
     font-size: 1rem;
   }
 `;
@@ -95,6 +95,8 @@ export const ContactArea = styled.textarea`
 
 export const SubmitInput = styled.input`
   display: flex;
+  font-weight: bold;
+  font-size: 1.025rem;
   align-items: center;
   justify-content: center;
   cursor: pointer;
