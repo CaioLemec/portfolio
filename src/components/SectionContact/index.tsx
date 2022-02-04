@@ -17,6 +17,7 @@ import {
   ContactArea,
   SubmitInput,
 } from "./SectionContactElements";
+import Footer from "../Footer";
 
 type FormData = {
   userName: string;
@@ -67,7 +68,7 @@ const SectionContact = () => {
   // };
 
   return (
-    <ContactContainer>
+    <ContactContainer id="contact">
       <MaxWidthLimitWrapper>
         <ContactContent>
           <ContactImgWrapper>
@@ -122,6 +123,7 @@ const SectionContact = () => {
           </ContactFormWrapper>
         </ContactContent>
       </MaxWidthLimitWrapper>
+      <Footer />
     </ContactContainer>
   );
 };

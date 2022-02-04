@@ -5,12 +5,12 @@ export const SocialBtnWrapper = styled.div `
     font-size: 30px;
     color: ${props => props.theme.colors.fontColor};
     align-items: center;
-    padding: 1rem 0;
 `
 
 export const SocialBtnLink = styled.a`
     color: ${props => props.theme.colors.fontColor};
     margin-right: 1.5rem;
+    transform: translateY(25%);
 
     &:first-child {
         margin-left: 0;
