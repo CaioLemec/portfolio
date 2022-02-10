@@ -24,18 +24,6 @@ export const ContactContent = styled.div`
   justify-content: center;
 `;
 
-export const ContactImgWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
-  width: 100%;
-  height: 100%;
-  background-color: purple;
-`;
-
-export const ContactImg = styled.img``;
-
 export const ContactFormWrapper = styled.div`
   display: flex;
   align-items: center;

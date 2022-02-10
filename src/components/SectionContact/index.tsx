@@ -2,13 +2,13 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import emailjs from "emailjs-com";
+import Footer from "../Footer";
+import SectionContactMap from "./SectionContactMap";
 
 import {
   ContactContainer,
   MaxWidthLimitWrapper,
   ContactContent,
-  ContactImgWrapper,
-  ContactImg,
   ContactFormWrapper,
   ContactForm,
   ContactInputTitle,
@@ -17,7 +17,6 @@ import {
   ContactArea,
   SubmitInput,
 } from "./SectionContactElements";
-import Footer from "../Footer";
 
 type FormData = {
   userName: string;
@@ -37,6 +36,7 @@ const schema = yup
   .required();
 
 const SectionContact = () => {
+
   const {
     register,
     handleSubmit,
@@ -67,9 +67,7 @@ const SectionContact = () => {
     <ContactContainer id="contact">
       <MaxWidthLimitWrapper>
         <ContactContent>
-          <ContactImgWrapper>
-            <ContactImg />
-          </ContactImgWrapper>
+          <SectionContactMap />
           <ContactFormWrapper>
             <ContactForm onSubmit={handleSubmit(onSubmit)}>
               <ContactInputTitle>Full Name</ContactInputTitle>
