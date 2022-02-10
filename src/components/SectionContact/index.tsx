@@ -1,14 +1,14 @@
 import { useForm, SubmitHandler } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-//import emailjs from "emailjs-com";
+import emailjs from "emailjs-com";
+import Footer from "../Footer";
+import SectionContactMap from "./SectionContactMap";
 
 import {
   ContactContainer,
   MaxWidthLimitWrapper,
   ContactContent,
-  ContactImgWrapper,
-  ContactImg,
   ContactFormWrapper,
   ContactForm,
   ContactInputTitle,
@@ -17,7 +17,6 @@ import {
   ContactArea,
   SubmitInput,
 } from "./SectionContactElements";
-import Footer from "../Footer";
 
 type FormData = {
   userName: string;
@@ -37,6 +36,7 @@ const schema = yup
   .required();
 
 const SectionContact = () => {
+
   const {
     register,
     handleSubmit,
@@ -45,35 +45,29 @@ const SectionContact = () => {
     resolver: yupResolver(schema),
   });
 
-  const onSubmit: SubmitHandler<FormData> = (data) => console.log(data);
-
-  // const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
-  //   e.preventDefault();
-  //   emailjs
-  //     .sendForm(
-  //       `${process.env.REACT_APP_EMAIL_JS_SERVICE_ID}`,
-  //       `${process.env.REACT_APP_EMAIL_JS_TEMPLATE_ID}`,
-  //       e.currentTarget,
-  //       `${process.env.REACT_APP_EMAIL_JS_USER_ID}`
-  //     )
-  //     .then(
-  //       (result) => {
-  //         console.log('Result =', result.text);
-  //       },
-  //       (error) => {
-  //         console.log('Error =', error.text);
-  //       }
-  //     );
-  //   e.currentTarget.reset();
-  // };
+  const onSubmit: SubmitHandler<FormData> = (data) => {
+    emailjs
+      .send(
+        `${process.env.REACT_APP_EMAIL_JS_SERVICE_ID}`,
+        `${process.env.REACT_APP_EMAIL_JS_TEMPLATE_ID}`,
+        data,
+        `${process.env.REACT_APP_EMAIL_JS_USER_ID}`
+      )
+      .then(
+        (result) => {
+          console.log("Result =", result.text);
+        },
+        (error) => {
+          console.log("Error =", error.text);
+        }
+      );
+  };
 
   return (
     <ContactContainer id="contact">
       <MaxWidthLimitWrapper>
         <ContactContent>
-          <ContactImgWrapper>
-            <ContactImg />
-          </ContactImgWrapper>
+          <SectionContactMap />
           <ContactFormWrapper>
             <ContactForm onSubmit={handleSubmit(onSubmit)}>
               <ContactInputTitle>Full Name</ContactInputTitle>
