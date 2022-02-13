@@ -21,6 +21,9 @@ function Sidebar({ isOpen, handleToggle }: SidebarProps) {
         </Icon>
         <SidebarWrapper>
           <SidebarMenu>
+            <SidebarLink to="home" onClick={handleToggle}>
+              Home
+            </SidebarLink>
             <SidebarLink to="about" onClick={handleToggle}>
               About
             </SidebarLink>

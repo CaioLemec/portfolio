@@ -1,4 +1,4 @@
-import { BsGithub, BsTwitter, BsLinkedin } from "react-icons/bs";
+import { BsGithub, BsTwitter, BsLinkedin, BsFacebook, BsSpotify } from "react-icons/bs";
 
 import {
     SocialBtnLink,
@@ -29,8 +29,27 @@ const SocialBtn = () => {
     >
       <BsLinkedin />
     </SocialBtnLink>
+
+    <SocialBtnLink
+      rel="noreferrer"
+      target="_blank"
+      href="https://www.facebook.com/caiolemec/"
+    >
+      <BsFacebook />
+    </SocialBtnLink>
+
+    <SocialBtnLink
+      rel="noreferrer"
+      target="_blank"
+      href="https://open.spotify.com/user/caio.lemec"
+    >
+      <BsSpotify />
+    </SocialBtnLink>
+
   </SocialBtnWrapper>
   );
 };
 
 export default SocialBtn;
+
+

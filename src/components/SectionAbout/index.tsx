@@ -1,48 +1,56 @@
-import my_picture from "../../images/MyPicture.png";
-import video_bv from "../../videos/video_bv.mp4";
-import video_wv from "../../videos/video_wv.mp4";
-import { ThemeContext } from "styled-components";
-import { useContext } from "react";
-import SocialBtn from "./SocialBtn";
-
 import {
   AboutContainer,
   MaxWidthLimitWrapper,
-  AboutBg,
-  VideoBg,
+  AboutContent,
   DescriptionAboutWrapper,
   DescriptionTitle,
-  SubDescriptionTitle,
-  MyPictureWrapper,
-  MyPictureContainer,
-  MyPicture,
+  Description,
+  WrapperResumeBtn,
+  ResumeBtn,
 } from "./SectionAboutElements";
-import { DynamicTxt } from "./DynamicTxt";
+import SectionAboutMap from "./SectionAboutMap";
+
+const downloadResumeBR =
+  "https://drive.google.com/uc?export=download&id=1nqS2rf9Azpp1o_2L8wPTQ5R2rlbJmUXW";
+const downloadResumeUS =
+  "https://drive.google.com/uc?export=download&id=1nqS2rf9Azpp1o_2L8wPTQ5R2rlbJmUXW";
 
 const SectionAbout = () => {
-  const theme = useContext(ThemeContext);
   return (
     <AboutContainer id="about">
-      <AboutBg>
-        {theme.name === "first" ? (
-          <VideoBg autoPlay loop muted src={video_bv} />
-        ) : (
-          <VideoBg autoPlay loop muted src={video_wv} />
-        )}
-      </AboutBg>
-
       <MaxWidthLimitWrapper>
-        <DescriptionAboutWrapper>
-          <SubDescriptionTitle>Hi,</SubDescriptionTitle>
-          <DescriptionTitle>I'm Caio Lemec</DescriptionTitle>
-          <SubDescriptionTitle><DynamicTxt/></SubDescriptionTitle>
-          <SocialBtn />
-        </DescriptionAboutWrapper>
-        <MyPictureWrapper>
-          <MyPictureContainer>
-            <MyPicture src={my_picture} />
-          </MyPictureContainer>
-        </MyPictureWrapper>
+        <AboutContent>
+          <SectionAboutMap />
+          <DescriptionAboutWrapper>
+            <DescriptionTitle>About:</DescriptionTitle>
+            <Description>
+              My name is Caio Lemec and I am a passionate self-taught developer.
+              I'm from Brazil, living in Rio de Janeiro and currently work as an
+              intern in software developer. I started my career in engineering
+              and marketing, but found in programming the passion I was looking
+              for move forward.
+            </Description>
+            <DescriptionTitle>Resume:</DescriptionTitle>
+            <WrapperResumeBtn>
+              <ResumeBtn
+                href={downloadResumeBR}
+                target="_blank"
+                rel="noopener noreferrer"
+                download
+              >
+                en-US
+              </ResumeBtn>
+              <ResumeBtn
+                href={downloadResumeUS}
+                target="_blank"
+                rel="noopener noreferrer"
+                download
+              >
+                pt-BR
+              </ResumeBtn>
+            </WrapperResumeBtn>
+          </DescriptionAboutWrapper>
+        </AboutContent>
       </MaxWidthLimitWrapper>
     </AboutContainer>
   );

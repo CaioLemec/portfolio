@@ -4,38 +4,24 @@ export const AboutContainer = styled.div`
   background: ${(props) => props.theme.colors.background};
   color: ${(props) => props.theme.colors.fontColor};
   width: 100%;
-  height: 100vh;
-  position: relative;
+  height: calc(100vh - 80px);
+  overflow: hidden;
 `;
 
 export const MaxWidthLimitWrapper = styled.div`
   height: 100%;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 0 auto;
   padding: 0 30px;
   max-width: 1440px;
 `;
 
-export const AboutBg = styled.div`
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+export const AboutContent = styled.div`
   height: 100%;
-  overflow: hidden;
-`;
-
-export const VideoBg = styled.video`
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  -o-object-fit: cover;
-  background: ${(props) => props.theme.colors.background};
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const DescriptionAboutWrapper = styled.div`
@@ -57,95 +43,77 @@ export const DescriptionAboutWrapper = styled.div`
   @media screen and (max-width: 1000px) {
     flex: 2;
   }
-
 `;
 
 export const DescriptionTitle = styled.div`
   color: ${(props) => props.theme.colors.fontColor};
-  font-size: 4rem;
+  text-align: center;
+  font-size: 1.5rem;
   text-align: left;
   font-weight: bold;
+  margin-bottom: 2rem;
 
   @media screen and (max-width: 1173px) {
-    font-size: 3rem;
+    font-size: 1.2rem;
   }
 
   @media screen and (max-width: 500px) {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
   @media screen and (max-width: 375px) {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 `;
 
-export const SubDescriptionTitle = styled.div`
+export const Description = styled.div`
   color: ${(props) => props.theme.colors.fontColor};
-  font-size: 2rem;
-  opacity: 0.8;
+  text-align: center;
+  font-size: 1rem;
   text-align: left;
   font-weight: bold;
-  margin: 10px 0;
+  margin-bottom: 2rem;
 
-  @media screen and (max-width: 1000px) {
-    font-size: 1.5rem;
+  @media screen and (max-width: 1173px) {
+    font-size: 0.8rem;
   }
 
   @media screen and (max-width: 500px) {
-    font-size: 1rem;
+    font-size: 0.6rem;
   }
 
   @media screen and (max-width: 375px) {
-    font-size: 0.8rem;
+    font-size: 0.5rem;
   }
 `;
 
-export const MyPictureWrapper = styled.div`
-  margin-top: 80px;
-  background: ${(props) => props.theme.colors.background};
-  color: ${(props) => props.theme.colors.fontColor};
-  flex: 1;
-  height: 100%;
+export const WrapperResumeBtn = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 30px;
-
-  @media screen and (max-width: 871px) {
-    display: none;
-  }
 `;
 
-export const MyPictureContainer = styled.div`
+export const ResumeBtn = styled.a`
+  width: 100%;
+  text-decoration: none;
   display: flex;
+  font-weight: bold;
+  font-size: 1.025rem;
   align-items: center;
   justify-content: center;
-  position: relative;
-  padding: 6px;
-  background: ${(props) => props.theme.colors.background};
-  border-radius: 100%;
+  cursor: pointer;
+  border: 0;
+  height: 3rem;
+  border-radius: 0.25rem;
+  color: ${(props) => props.theme.colors.contrast};
+  background: ${(props) => props.theme.colors.highLight};
+  transition: 0.2s;
 
-  :before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    border: 6px solid ${(props) => props.theme.colors.background};
-    border-radius: 100%;
-    border-top-color: ${(props) => props.theme.colors.highLight};
-    animation: isRotating 3s infinite;
+  &:last-child {
+    margin-left: 2rem;
   }
 
-  @keyframes isRotating {
-    to {
-      transform: rotate(2turn);
-    }
+  &:hover {
+    filter: brightness(0.8);
   }
-`;
-
-export const MyPicture = styled.img`
-  border-radius: 100%;
 `;

@@ -4,7 +4,7 @@ import {
   NavbarContainer,
 } from "./FooterElements";
 
-import SocialBtn from "../SectionAbout/SocialBtn";
+import SocialBtn from "../SectionHome/SocialBtn";
 
 const Footer = () => {
   return (
