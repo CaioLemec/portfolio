@@ -43,7 +43,6 @@ export const DescriptionAboutWrapper = styled.div`
   @media screen and (max-width: 1000px) {
     flex: 2;
   }
-
 `;
 
 export const DescriptionTitle = styled.div`
@@ -92,7 +91,6 @@ export const WrapperResumeBtn = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-
 `;
 
 export const ResumeBtn = styled.a`
@@ -115,9 +113,7 @@ export const ResumeBtn = styled.a`
     margin-left: 2rem;
   }
 
-  &:hover {   
+  &:hover {
     filter: brightness(0.8);
   }
 `;
-
-

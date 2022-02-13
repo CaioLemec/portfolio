@@ -37,13 +37,17 @@ const SectionAbout = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 download
-              >en-US</ResumeBtn>
+              >
+                en-US
+              </ResumeBtn>
               <ResumeBtn
                 href={downloadResumeUS}
                 target="_blank"
                 rel="noopener noreferrer"
                 download
-              >pt-BR</ResumeBtn>
+              >
+                pt-BR
+              </ResumeBtn>
             </WrapperResumeBtn>
           </DescriptionAboutWrapper>
         </AboutContent>
