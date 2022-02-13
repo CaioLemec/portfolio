@@ -30,7 +30,7 @@ const Navbar = ({ handleToggle }: NavBarProps) => {
       <Nav>
         <NavbarContainer>
           <NavLogo
-            to="about"
+            to="home"
             smooth={true}
             duration={500}
             spy={true}
@@ -43,6 +43,19 @@ const Navbar = ({ handleToggle }: NavBarProps) => {
           </MobileIcon>
 
           <NavMenu>
+
+            <NavItem>
+              <NavLinks
+                to="home"
+                smooth={true}
+                duration={500}
+                spy={true}
+                activeClass="isActive"
+                offset={-80}
+              >
+                Home
+              </NavLinks>
+            </NavItem>
 
             <NavItem>
               <NavLinks
