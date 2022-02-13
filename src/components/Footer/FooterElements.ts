@@ -26,13 +26,10 @@ export const NavbarContainer = styled.nav`
   width: 100%;
   padding: 0 24px;
   max-width: 1100px;
+  justify-content: center;
 
   a {
     font-size: 25px;
-  }
-
-  @media screen and (max-width: 500px) {
-      justify-content: center;
   }
 
   @media screen and (max-width: 380px) {

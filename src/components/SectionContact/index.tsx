@@ -3,11 +3,15 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import emailjs from "emailjs-com";
 import Footer from "../Footer";
+import emailLight from "../../images/emailLight.png";
+import emailDark from "../../images/emailDark.png";
 
 import {
   ContactContainer,
   MaxWidthLimitWrapper,
   ContactContent,
+  ImageWrapper,
+  PaperPlanImg,
   ContactFormWrapper,
   ContactForm,
   ContactInputTitle,
@@ -16,6 +20,8 @@ import {
   ContactArea,
   SubmitInput,
 } from "./SectionContactElements";
+import { useContext } from "react";
+import { ThemeContext } from "styled-components";
 
 type FormData = {
   userName: string;
@@ -35,7 +41,7 @@ const schema = yup
   .required();
 
 const SectionContact = () => {
-
+  const theme = useContext(ThemeContext);
   const {
     register,
     handleSubmit,
@@ -62,10 +68,23 @@ const SectionContact = () => {
       );
   };
 
+  // {theme.name === "first" ? (
+  //   <img src={emailLight} alt="paper plan" />
+  // ) : (
+  //   <img src={emailDark} alt="paper plan" />
+  // )}
+
   return (
     <ContactContainer id="contact">
       <MaxWidthLimitWrapper>
         <ContactContent>
+          <ImageWrapper>
+            {theme.name === "first" ? (
+              <PaperPlanImg src={emailLight} alt="paper plan" />
+            ) : (
+              <PaperPlanImg src={emailDark} alt="paper plan" />
+            )}
+          </ImageWrapper>
           <ContactFormWrapper>
             <ContactForm onSubmit={handleSubmit(onSubmit)}>
               <ContactInputTitle>Full Name</ContactInputTitle>

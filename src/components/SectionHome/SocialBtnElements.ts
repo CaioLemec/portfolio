@@ -24,4 +24,15 @@ export const SocialBtnLink = styled.a`
         transition: all 0.2s ease-in-out;
         color: ${props => props.theme.colors.highLight};
     }
+
+    @media screen and (max-width: 500px) {
+        margin-right: 1rem;
+        font-size: 2rem;
+    }
+
+    @media screen and (max-width: 375px) {
+        margin-right: 0.8rem;
+        font-size: 1.5rem;
+    }
+
 `
