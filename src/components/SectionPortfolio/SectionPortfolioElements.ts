@@ -29,13 +29,13 @@ export const PortfolioContent = styled.div`
 export const PortfolioTitle = styled.div`
   color: ${(props) => props.theme.colors.fontColor};
   margin-top: 1rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: left;
   font-weight: bold;
   margin-bottom: 30px;
 
   @media screen and (max-width: 1300px) {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 `;
 

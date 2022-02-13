@@ -18,4 +18,8 @@ export const AboutMapWrapper = styled.div`
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   }
+
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
 `;

@@ -48,21 +48,21 @@ export const DescriptionAboutWrapper = styled.div`
 export const DescriptionTitle = styled.div`
   color: ${(props) => props.theme.colors.fontColor};
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: left;
   font-weight: bold;
   margin-bottom: 2rem;
 
   @media screen and (max-width: 1173px) {
-    font-size: 1.2rem;
-  }
-
-  @media screen and (max-width: 500px) {
     font-size: 1rem;
   }
 
+  @media screen and (max-width: 500px) {
+    font-size: 0.8rem;
+  }
+
   @media screen and (max-width: 375px) {
-    font-size: 0.9rem;
+    font-size: 0.6rem;
   }
 `;
 
@@ -71,19 +71,22 @@ export const Description = styled.div`
   text-align: center;
   font-size: 1rem;
   text-align: left;
-  font-weight: bold;
   margin-bottom: 2rem;
 
   @media screen and (max-width: 1173px) {
-    font-size: 0.8rem;
+    font-size: 1rem;
+  }
+
+  @media screen and (max-width: 800px) {
+    text-align: center;
   }
 
   @media screen and (max-width: 500px) {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 
   @media screen and (max-width: 375px) {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
   }
 `;
 
@@ -91,6 +94,7 @@ export const WrapperResumeBtn = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 `;
 
 export const ResumeBtn = styled.a`
@@ -115,5 +119,17 @@ export const ResumeBtn = styled.a`
 
   &:hover {
     filter: brightness(0.8);
+  }
+
+  @media screen and (max-width: 1173px) {
+    font-size: 1rem;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 0.8rem;
+  }
+
+  @media screen and (max-width: 375px) {
+    font-size: 0.6rem;
   }
 `;

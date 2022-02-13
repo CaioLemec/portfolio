@@ -4,6 +4,7 @@ import video_wv from "../../videos/video_wv.mp4";
 import { ThemeContext } from "styled-components";
 import { useContext } from "react";
 import SocialBtn from "./SocialBtn";
+import { DynamicTxt } from "./DynamicTxt";
 
 import {
   AboutContainer,
@@ -17,7 +18,6 @@ import {
   MyPictureContainer,
   MyPicture,
 } from "./SectionHomeElements";
-import { DynamicTxt } from "./DynamicTxt";
 
 const SectionHome = () => {
   const theme = useContext(ThemeContext);

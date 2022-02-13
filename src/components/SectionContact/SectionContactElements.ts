@@ -24,19 +24,51 @@ export const ContactContent = styled.div`
   justify-content: center;
 `;
 
-export const ContactFormWrapper = styled.div`
+export const ImageWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 1;
   width: 100%;
   height: 100%;
+  padding-right: 5rem;
+
+  @media screen and (max-width: 1080px) {
+    display: none;
+  }
+`;
+
+export const PaperPlanImg = styled.img`
+  max-width: 500px;
+  animation: isFloating 3s infinite;
+
+  @media screen and (max-width: 1180px) {
+    max-width: 400px;
+  }
+
+  @keyframes isFloating {
+    0%,
+    100% {
+      transform: translateY(0%);
+    }
+    50% {
+      transform: translateY(-5%);
+    }
+  }
+`;
+
+export const ContactFormWrapper = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const ContactForm = styled.form`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
 `;
 
 export const ContactInputTitle = styled.h1`
@@ -71,7 +103,7 @@ export const ErrorText = styled.p`
 
 export const ContactArea = styled.textarea`
   background: rgba(255, 255, 255, 0.15);
-  width: 30rem;
+  width: 100%;
   border: 0;
   padding: 1rem;
   border-radius: 0.25rem;
@@ -96,7 +128,8 @@ export const SubmitInput = styled.input`
   background: ${(props) => props.theme.colors.highLight};
   transition: 0.2s;
 
-  &:not(:disabled):hover {        // if button !disable do Hover.
+  &:not(:disabled):hover {
+    // if button !disable do Hover.
     filter: brightness(0.8);
   }
 
@@ -105,4 +138,3 @@ export const SubmitInput = styled.input`
     cursor: not-allowed;
   }
 `;
-
