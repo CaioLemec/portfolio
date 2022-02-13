@@ -22,6 +22,47 @@ export const AboutContent = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background:red
+`;
+
+export const DescriptionAboutWrapper = styled.div`
+  margin-top: 80px;
+  color: ${(props) => props.theme.colors.fontColor};
+  flex: 1;
+  flex-direction: column;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0 30px;
+  z-index: 2;
+
+  @media screen and (max-width: 871px) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 1000px) {
+    flex: 2;
+  }
+
+`;
+
+export const Description = styled.div`
+  color: ${(props) => props.theme.colors.fontColor};
+  text-align: center;
+  font-size: 1rem;
+  text-align: left;
+  font-weight: bold;
+
+  @media screen and (max-width: 1173px) {
+    font-size: 3rem;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 2rem;
+  }
+
+  @media screen and (max-width: 375px) {
+    font-size: 1rem;
+  }
 `;
 
