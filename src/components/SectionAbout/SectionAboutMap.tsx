@@ -4,7 +4,7 @@ import { useContext } from "react";
 import Leaflet from "leaflet";
 import mapPackage from "../../images/marker1.png";
 import mapPackage1 from "../../images/marker2.png";
-import { ContactMapWrapper } from "./SectionContactMapElements";
+import { AboutMapWrapper } from "./SectionAboutMapElements";
 
 const mapPackageIconLight = Leaflet.icon({
   iconUrl: mapPackage,
@@ -18,11 +18,11 @@ const mapPackageIconDark = Leaflet.icon({
   popupAnchor: [0, -30],
 });
 
-const SectionContactMap = () => {
+const SectionAboutMap = () => {
   const theme = useContext(ThemeContext);
 
   return (
-    <ContactMapWrapper>
+    <AboutMapWrapper>
       <MapContainer center={[-22.8858684999199, -43.115057711814664]} zoom={13}>
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -49,8 +49,8 @@ const SectionContactMap = () => {
           </Marker>
         )}
       </MapContainer>
-    </ContactMapWrapper>
+    </AboutMapWrapper>
   );
 };
 
-export default SectionContactMap;
+export default SectionAboutMap;

@@ -3,7 +3,6 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import emailjs from "emailjs-com";
 import Footer from "../Footer";
-import SectionContactMap from "./SectionContactMap";
 
 import {
   ContactContainer,
@@ -67,7 +66,6 @@ const SectionContact = () => {
     <ContactContainer id="contact">
       <MaxWidthLimitWrapper>
         <ContactContent>
-          <SectionContactMap />
           <ContactFormWrapper>
             <ContactForm onSubmit={handleSubmit(onSubmit)}>
               <ContactInputTitle>Full Name</ContactInputTitle>

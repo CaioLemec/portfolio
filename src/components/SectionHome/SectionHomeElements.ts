@@ -4,7 +4,7 @@ export const AboutContainer = styled.div`
   background: ${(props) => props.theme.colors.background};
   color: ${(props) => props.theme.colors.fontColor};
   width: 100%;
-  height: 100vh;
+  height: calc(100vh + 80px);
   position: relative;
 `;
 
@@ -102,6 +102,7 @@ export const SubDescriptionTitle = styled.div`
 
 export const MyPictureWrapper = styled.div`
   margin-top: 80px;
+  margin-bottom: 80px;
   background: ${(props) => props.theme.colors.background};
   color: ${(props) => props.theme.colors.fontColor};
   flex: 1;

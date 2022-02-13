@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ContactContainer = styled.div`
+export const AboutContainer = styled.div`
   background: ${(props) => props.theme.colors.background};
   color: ${(props) => props.theme.colors.fontColor};
   width: 100%;

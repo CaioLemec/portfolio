@@ -1,19 +1,22 @@
+
 import {
-  ContactContainer,
+  AboutContainer,
   MaxWidthLimitWrapper,
   AboutContent,
 } from "./SectionAboutElements";
+import SectionAboutMap from "./SectionAboutMap";
 
 const SectionAbout = () => {
 
   return (
-    <ContactContainer id="about">
+    <AboutContainer id="about">
       <MaxWidthLimitWrapper>
           <AboutContent>
-              
+          <SectionAboutMap />
+          <SectionAboutMap />
           </AboutContent>
       </MaxWidthLimitWrapper>
-    </ContactContainer>
+    </AboutContainer>
   );
 };
 
