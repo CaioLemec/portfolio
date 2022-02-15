@@ -133,8 +133,8 @@ const SectionContact = () => {
             </ContactForm>
           </ContactFormWrapper>
         </ContactContent>
+        <Footer />
       </MaxWidthLimitWrapper>
-      <Footer />
     </ContactContainer>
   );
 };
