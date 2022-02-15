@@ -34,7 +34,6 @@ const Navbar = ({ handleToggle }: NavBarProps) => {
             smooth={true}
             duration={500}
             spy={true}
-            offset={-80}
           >
             Caio Lemec
           </NavLogo>

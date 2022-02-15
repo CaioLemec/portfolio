@@ -2,14 +2,11 @@ import styled from "styled-components";
 
 export const Nav = styled.nav`
   background: ${(props) => props.theme.colors.background};
-  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1rem;
-  z-index: 10;
   transform: translateY(-100%);
-
   margin: 0 auto;
   bottom: 0;
   @media screen and (max-width: 960px) {

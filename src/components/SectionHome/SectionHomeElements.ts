@@ -4,7 +4,7 @@ export const AboutContainer = styled.div`
   background: ${(props) => props.theme.colors.background};
   color: ${(props) => props.theme.colors.fontColor};
   width: 100%;
-  height: calc(100vh + 80px);
+  height: 100vh;
   position: relative;
 `;
 

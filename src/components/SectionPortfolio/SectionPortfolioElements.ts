@@ -4,7 +4,7 @@ export const PortfolioContainer = styled.div`
   background: ${(props) => props.theme.colors.background};
   color: ${(props) => props.theme.colors.fontColor};
   width: 100%;
-  height: 100%;
+  height: calc(100vh - 80px);
   position: relative;
   overflow: hidden;
 `;
@@ -29,10 +29,10 @@ export const PortfolioContent = styled.div`
 export const PortfolioTitle = styled.div`
   color: ${(props) => props.theme.colors.fontColor};
   margin-top: 1rem;
-  font-size: 2rem;
+  font-size: 1.825rem;
   text-align: left;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 1rem;
 
   @media screen and (max-width: 1300px) {
     font-size: 1rem;
@@ -44,7 +44,7 @@ export const PortfolioGrid = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
   height: 100%;
-  gap: 40px;
+  gap: 20px;
 
   @media screen and (max-width: 900px) {
     grid-template-columns: 1fr 1fr;

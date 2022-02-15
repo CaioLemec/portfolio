@@ -17,7 +17,7 @@ export const MaxWidthLimitWrapper = styled.div`
 `;
 
 export const ContactContent = styled.div`
-  height: calc(100% - 80px);
+  height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
