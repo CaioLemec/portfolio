@@ -25,7 +25,6 @@ export const AboutContent = styled.div`
 `;
 
 export const DescriptionAboutWrapper = styled.div`
-  margin-top: 80px;
   color: ${(props) => props.theme.colors.fontColor};
   flex: 1;
   flex-direction: column;
@@ -72,6 +71,23 @@ export const Description = styled.div`
   font-size: 1rem;
   text-align: left;
   margin-bottom: 2rem;
+
+  a {
+    text-decoration: none;
+    margin-left: 1rem;
+    font-weight: bold;
+    color: ${(props) => props.theme.colors.fontColor};
+    animation: colorChange 2s infinite;
+
+    &:hover {
+      filter: brightness(0.8);
+    }
+  }
+  
+  @keyframes colorChange {
+	50% {
+		color: ${(props) => props.theme.colors.highLight};
+	}
 
   @media screen and (max-width: 1173px) {
     font-size: 1rem;
