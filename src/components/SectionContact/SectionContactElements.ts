@@ -6,6 +6,7 @@ export const ContactContainer = styled.div`
   width: 100%;
   height: calc(100vh - 80px);
   overflow: hidden;
+  position: relative;
 `;
 
 export const MaxWidthLimitWrapper = styled.div`
@@ -138,3 +139,110 @@ export const SubmitInput = styled.input`
     cursor: not-allowed;
   }
 `;
+
+export const ErrorToastDiv = styled.div`
+  position: absolute;
+  top: 5rem;
+  right: 0rem;
+  color: ${(props) => props.theme.colors.contrast};
+  background: #EA1220;
+  width: 20rem;
+  height: 4rem;
+  border-radius: 0.25rem;
+  display: flex;
+  font-weight: bold;
+  font-size: 1.0250rem;
+  align-items: center;
+  justify-content: center;
+  animation: PopingIn 8s linear;
+
+  @keyframes PopingIn {
+    0% {
+      transform: translateX(100%);
+    }
+    10% {
+      transform: translateX(0%);
+    }
+    20% {
+      transform: translateX(0%);
+    }
+    30% {
+      transform: translateX(0%);
+    }
+    40% {
+      transform: translateX(0%);
+    }
+    50% {
+      transform: translateX(0%);
+    }
+    60% {
+      transform: translateX(0%);
+    }
+    70% {
+      transform: translateX(0%);
+    }
+    80% {
+      transform: translateX(0%);
+    }
+    90% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+`;
+
+export const SucessToastDiv = styled.div`
+  position: absolute;
+  top: 5rem;
+  right: 0rem;
+  color: ${(props) => props.theme.colors.contrast};
+  background: #1AC247;
+  width: 20rem;
+  height: 4rem;
+  border-radius: 0.25rem;
+  display: flex;
+  font-weight: bold;
+  font-size: 1.0250rem;
+  align-items: center;
+  justify-content: center;
+  animation: PopingIn 8s linear;
+
+  @keyframes PopingIn {
+    0% {
+      transform: translateX(100%);
+    }
+    10% {
+      transform: translateX(0%);
+    }
+    20% {
+      transform: translateX(0%);
+    }
+    30% {
+      transform: translateX(0%);
+    }
+    40% {
+      transform: translateX(0%);
+    }
+    50% {
+      transform: translateX(0%);
+    }
+    60% {
+      transform: translateX(0%);
+    }
+    70% {
+      transform: translateX(0%);
+    }
+    80% {
+      transform: translateX(0%);
+    }
+    90% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+`;
+
