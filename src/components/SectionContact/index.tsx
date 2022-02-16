@@ -1,8 +1,12 @@
+import { useContext, useState } from "react";
+import { ThemeContext } from "styled-components";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import emailjs from "emailjs-com";
 import Footer from "../Footer";
+import SucessToast from "./SucessToast";
+import ErrorToast from "./ErrorToast";
 import emailLight from "../../images/emailLight.png";
 import emailDark from "../../images/emailDark.png";
 
@@ -20,8 +24,6 @@ import {
   ContactArea,
   SubmitInput,
 } from "./SectionContactElements";
-import { useContext } from "react";
-import { ThemeContext } from "styled-components";
 
 type FormData = {
   userName: string;
@@ -41,7 +43,10 @@ const schema = yup
   .required();
 
 const SectionContact = () => {
+  const [sucessToastControl, setSucessToastControl] = useState(false);
+  const [failToastControl, setFailToastControl] = useState(false);
   const theme = useContext(ThemeContext);
+
   const {
     register,
     handleSubmit,
@@ -49,6 +54,13 @@ const SectionContact = () => {
   } = useForm<FormData>({
     resolver: yupResolver(schema),
   });
+
+  function handleToast() {
+    setTimeout(() => {
+      setSucessToastControl(false);
+      setFailToastControl(false);
+    }, 8000);
+  }
 
   const onSubmit: SubmitHandler<FormData> = (data) => {
     emailjs
@@ -60,19 +72,15 @@ const SectionContact = () => {
       )
       .then(
         (result) => {
-          console.log("Result =", result.text);
+          setSucessToastControl(true);
+          handleToast();
         },
         (error) => {
-          console.log("Error =", error.text);
+          setFailToastControl(true);
+          handleToast();
         }
       );
   };
-
-  // {theme.name === "first" ? (
-  //   <img src={emailLight} alt="paper plan" />
-  // ) : (
-  //   <img src={emailDark} alt="paper plan" />
-  // )}
 
   return (
     <ContactContainer id="contact">
@@ -132,6 +140,8 @@ const SectionContact = () => {
               )}
             </ContactForm>
           </ContactFormWrapper>
+          {sucessToastControl && <SucessToast />}
+          {failToastControl && <ErrorToast />}
         </ContactContent>
         <Footer />
       </MaxWidthLimitWrapper>
