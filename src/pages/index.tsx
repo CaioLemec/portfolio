@@ -20,6 +20,7 @@ const Home = () => {
       <SectionHome />
       <SectionAbout />
       <SectionPortfolio />
+      <div style={{padding: '10px'}}></div>
       <SectionContact />
     </>
   );

@@ -76,7 +76,7 @@ const Navbar = ({ handleToggle }: NavBarProps) => {
                 duration={500}
                 spy={true}
                 activeClass="isActive"
-                offset={-80}
+                offset={-75}
               >
                 Portfolio
               </NavLinks>
@@ -89,7 +89,7 @@ const Navbar = ({ handleToggle }: NavBarProps) => {
                 duration={500}
                 spy={true}
                 activeClass="isActive"
-                offset={-80}
+                offset={-85}
               >
                 Contact Me
               </NavLinks>
