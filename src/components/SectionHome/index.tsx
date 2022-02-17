@@ -2,9 +2,11 @@ import my_picture from "../../images/MyPicture.png";
 import video_bv from "../../videos/video_bv.mp4";
 import video_wv from "../../videos/video_wv.mp4";
 import { ThemeContext } from "styled-components";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import SocialBtn from "./SocialBtn";
 import { DynamicTxt } from "./DynamicTxt";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import {
   AboutContainer,
@@ -21,6 +23,11 @@ import {
 
 const SectionHome = () => {
   const theme = useContext(ThemeContext);
+
+  useEffect(() => {
+    AOS.init({duration: 2000})
+  }, [])
+
   return (
     <AboutContainer id="home">
       <AboutBg>

@@ -29,12 +29,7 @@ const Navbar = ({ handleToggle }: NavBarProps) => {
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo
-            to="home"
-            smooth={true}
-            duration={500}
-            spy={true}
-          >
+          <NavLogo to="home" smooth={true} duration={500} spy={true}>
             Caio Lemec
           </NavLogo>
           <MobileIcon onClick={handleToggle}>
@@ -42,7 +37,6 @@ const Navbar = ({ handleToggle }: NavBarProps) => {
           </MobileIcon>
 
           <NavMenu>
-
             <NavItem>
               <NavLinks
                 to="home"
@@ -94,7 +88,6 @@ const Navbar = ({ handleToggle }: NavBarProps) => {
                 Contact Me
               </NavLinks>
             </NavItem>
-
           </NavMenu>
           <NavBtn onClick={handleToggleTheme}>
             {theme.name !== "first" ? (

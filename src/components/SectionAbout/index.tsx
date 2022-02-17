@@ -11,6 +11,8 @@ import {
 } from "./SectionAboutElements";
 import SectionAboutMap from "./SectionAboutMap";
 import TechnologyBtn from "./TechnologyBtn";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 interface Repository {
   name: string;
@@ -32,8 +34,12 @@ const SectionAbout = () => {
       .then((data) => setRepositories(data));
   }, []);
 
+  useEffect(() => {
+    AOS.init({duration: 2000})
+  }, [])
+
   return (
-    <AboutContainer id="about">
+    <AboutContainer id="about" data-aos="fade-right">
       <MaxWidthLimitWrapper>
         <AboutContent>
           <SectionAboutMap />

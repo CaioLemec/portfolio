@@ -6,6 +6,8 @@ import omini from "../../images/5.png";
 import crypto from "../../images/6.png";
 import Hover from "react-3d-hover";
 import { FaArrowRight } from "react-icons/fa";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import {
   PortfolioContainer,
@@ -19,10 +21,15 @@ import {
   CardButtonWrapper,
   CardImg,
 } from "./SectionPortfolioElements";
+import { useEffect } from "react";
 
 const SectionPortfolio = () => {
+  useEffect(() => {
+    AOS.init({duration: 2000})
+  }, [])
+
   return (
-    <PortfolioContainer id="portfolio">
+    <PortfolioContainer id="portfolio" data-aos="fade-right">
       <MaxWidthLimitWrapper>
         <PortfolioContent>
           <PortfolioTitle>Last projects...</PortfolioTitle>
