@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "styled-components";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -9,6 +9,8 @@ import SucessToast from "./SucessToast";
 import ErrorToast from "./ErrorToast";
 import emailLight from "../../images/emailLight.png";
 import emailDark from "../../images/emailDark.png";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import {
   ContactContainer,
@@ -47,6 +49,10 @@ const SectionContact = () => {
   const [failToastControl, setFailToastControl] = useState(false);
   const theme = useContext(ThemeContext);
 
+  useEffect(() => {
+    AOS.init({duration: 2000})
+  }, [])
+
   const {
     register,
     handleSubmit,
@@ -83,9 +89,9 @@ const SectionContact = () => {
   };
 
   return (
-    <ContactContainer id="contact">
+    <ContactContainer id="contact" >
       <MaxWidthLimitWrapper>
-        <ContactContent>
+        <ContactContent data-aos="fade-right">
           <ImageWrapper>
             {theme.name === "first" ? (
               <PaperPlanImg src={emailLight} alt="paper plan" />
