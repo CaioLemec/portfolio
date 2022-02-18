@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Nav = styled.nav`
+export const FooterWrapper = styled.div`
   background: ${(props) => props.theme.colors.background};
   display: flex;
   justify-content: center;
@@ -14,7 +14,7 @@ export const Nav = styled.nav`
   }
 `;
 
-export const NavbarContainer = styled.nav`
+export const FooterContainer = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -27,6 +27,10 @@ export const NavbarContainer = styled.nav`
 
   a {
     font-size: 25px;
+
+    @media screen and (max-width: 550px) {
+      display: none;
+    }
   }
 
   @media screen and (max-width: 380px) {

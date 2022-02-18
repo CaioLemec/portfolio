@@ -1,16 +1,16 @@
-import { Nav, NavbarContainer } from "./FooterElements";
+import { FooterWrapper, FooterContainer } from "./FooterElements";
 
 import SocialBtn from "../SectionHome/SocialBtn";
 
 const Footer = () => {
   return (
     <>
-      <Nav>
-        <NavbarContainer>
+      <FooterWrapper>
+        <FooterContainer>
           <p> Made with ❤ by Caio Lemec </p>
           <SocialBtn />
-        </NavbarContainer>
-      </Nav>
+        </FooterContainer>
+      </FooterWrapper>
     </>
   );
 };

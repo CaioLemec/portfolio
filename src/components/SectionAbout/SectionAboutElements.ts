@@ -72,6 +72,10 @@ export const Description = styled.div`
   text-align: left;
   margin-bottom: 2rem;
 
+  @media screen and (max-width: 871px) {
+    text-align: center;
+  }
+
   a {
     text-decoration: none;
     margin-left: 1rem;
@@ -93,7 +97,7 @@ export const Description = styled.div`
     font-size: 1rem;
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 871px) {
     text-align: center;
   }
 

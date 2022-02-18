@@ -17,12 +17,29 @@ export const MaxWidthLimitWrapper = styled.div`
   max-width: 1440px;
 `;
 
+export const ContactTitle = styled.div`
+  color: ${(props) => props.theme.colors.fontColor};
+  margin-top: 1rem;
+  font-size: 1.125rem;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  position: absolute;
+  top: 0;
+  margin-top: 10%;
+
+  @media screen and (min-width: 370px) {
+    display: none;
+  }
+`;
+
 export const ContactContent = styled.div`
   height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 `;
 
 export const ImageWrapper = styled.div`
