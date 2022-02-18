@@ -28,7 +28,7 @@ export const ContactTitle = styled.div`
   top: 0;
   margin-top: 10%;
 
-  @media screen and (min-width: 450px) {
+  @media screen and (min-width: 550px) {
     display: none;
   }
 `;
