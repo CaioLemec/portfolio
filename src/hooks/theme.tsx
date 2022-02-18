@@ -1,6 +1,6 @@
-import React, { createContext, useCallback, useContext, useState } from 'react';
-import { ThemeProvider } from 'styled-components';
-import { firstTheme, secondTheme } from '../styles/themes';
+import React, { createContext, useCallback, useContext, useState } from "react";
+import { ThemeProvider } from "styled-components";
+import { firstTheme, secondTheme } from "../styles/themes";
 
 interface ThemeContextData {
   toggleTheme(): void;
@@ -10,12 +10,12 @@ interface ThemeContextData {
 interface Theme {
   name: string;
   colors: {
-    primary: string,
-    highLight: string,
-    contrast: string,
-    background: string,
-    fontColor: string,
-  }
+    primary: string;
+    highLight: string;
+    contrast: string;
+    background: string;
+    fontColor: string;
+  };
 }
 
 const ThemeContext = createContext<ThemeContextData>({} as ThemeContextData);
@@ -26,23 +26,18 @@ export const CustomThemeProvider: React.FC = ({ children }) => {
   const [theme, setTheme] = useState<Theme>(secondTheme);
 
   const toggleTheme = useCallback(() => {
-    if (theme.name === 'first'){
+    if (theme.name === "first") {
       setTheme(secondTheme);
-    }
-    else if (theme.name === 'second') {
+    } else if (theme.name === "second") {
       setTheme(firstTheme);
     }
   }, [theme]);
 
   return (
-    <ThemeContext.Provider
-      value={{ toggleTheme, theme }}
-    >
-      <ThemeProvider theme={theme}>
-        {children}
-      </ThemeProvider>
+    <ThemeContext.Provider value={{ toggleTheme, theme }}>
+      <ThemeProvider theme={theme}>{children}</ThemeProvider>
     </ThemeContext.Provider>
-  )
-}
+  );
+};
 
 export default ThemeProvider;

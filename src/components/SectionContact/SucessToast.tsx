@@ -1,12 +1,7 @@
-import {
-  SucessToastDiv,
-} from "./SectionContactElements";
+import { SucessToastDiv } from "./SectionContactElements";
 
 const ErrorToast = () => {
-    return (
-      <SucessToastDiv>Email successfully sent</SucessToastDiv>
-    );
-  };
-  
-  export default ErrorToast;
-  
+  return <SucessToastDiv>Email successfully sent</SucessToastDiv>;
+};
+
+export default ErrorToast;

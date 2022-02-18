@@ -35,7 +35,6 @@ const Navbar = ({ handleToggle }: NavBarProps) => {
           <MobileIcon onClick={handleToggle}>
             <FaBars />
           </MobileIcon>
-
           <NavMenu>
             <NavItem>
               <NavLinks
@@ -49,7 +48,6 @@ const Navbar = ({ handleToggle }: NavBarProps) => {
                 Home
               </NavLinks>
             </NavItem>
-
             <NavItem>
               <NavLinks
                 to="about"
@@ -62,7 +60,6 @@ const Navbar = ({ handleToggle }: NavBarProps) => {
                 About
               </NavLinks>
             </NavItem>
-
             <NavItem>
               <NavLinks
                 to="portfolio"
@@ -75,7 +72,6 @@ const Navbar = ({ handleToggle }: NavBarProps) => {
                 Portfolio
               </NavLinks>
             </NavItem>
-
             <NavItem>
               <NavLinks
                 to="contact"
@@ -83,7 +79,7 @@ const Navbar = ({ handleToggle }: NavBarProps) => {
                 duration={500}
                 spy={true}
                 activeClass="isActive"
-                offset={-85}
+                offset={-83}
               >
                 Contact Me
               </NavLinks>

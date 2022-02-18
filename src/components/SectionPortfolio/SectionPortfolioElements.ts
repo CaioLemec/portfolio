@@ -4,7 +4,7 @@ export const PortfolioContainer = styled.div`
   background: ${(props) => props.theme.colors.background};
   color: ${(props) => props.theme.colors.fontColor};
   width: 100%;
-  height: calc(100vh - 80px);
+  height: 100%;
   position: relative;
   overflow: hidden;
 `;
@@ -117,8 +117,6 @@ export const CardButtonWrapper = styled.a`
   flex: 1;
   color: ${(props) => props.theme.colors.fontColor};
 
-
-
   &:hover {
     background-color: ${(props) => props.theme.colors.highLight};
     transition: 0.2s ease-in-out;
@@ -136,4 +134,3 @@ export const CardButtonWrapper = styled.a`
 export const CardImg = styled.img`
   max-width: 100%;
 `;
-

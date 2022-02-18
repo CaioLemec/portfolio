@@ -1,8 +1,4 @@
-
-import {
-  Nav,
-  NavbarContainer,
-} from "./FooterElements";
+import { Nav, NavbarContainer } from "./FooterElements";
 
 import SocialBtn from "../SectionHome/SocialBtn";
 

@@ -57,7 +57,6 @@ export const DescriptionAboutWrapper = styled.div`
   @media screen and (max-width: 1000px) {
     flex: 2;
   }
-
 `;
 
 export const DescriptionTitle = styled.div`

@@ -5,8 +5,8 @@ import { ThemeContext } from "styled-components";
 import { useContext, useEffect } from "react";
 import SocialBtn from "./SocialBtn";
 import { DynamicTxt } from "./DynamicTxt";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import {
   AboutContainer,
@@ -25,8 +25,8 @@ const SectionHome = () => {
   const theme = useContext(ThemeContext);
 
   useEffect(() => {
-    AOS.init({duration: 2000})
-  }, [])
+    AOS.init({ duration: 2000 });
+  }, []);
 
   return (
     <AboutContainer id="home">

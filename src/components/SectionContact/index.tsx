@@ -9,8 +9,8 @@ import SucessToast from "./SucessToast";
 import ErrorToast from "./ErrorToast";
 import emailLight from "../../images/emailLight.png";
 import emailDark from "../../images/emailDark.png";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import {
   ContactContainer,
@@ -50,8 +50,8 @@ const SectionContact = () => {
   const theme = useContext(ThemeContext);
 
   useEffect(() => {
-    AOS.init({duration: 2000})
-  }, [])
+    AOS.init({ duration: 2000 });
+  }, []);
 
   const {
     register,
@@ -89,7 +89,7 @@ const SectionContact = () => {
   };
 
   return (
-    <ContactContainer id="contact" >
+    <ContactContainer id="contact">
       <MaxWidthLimitWrapper>
         <ContactContent data-aos="fade-right">
           <ImageWrapper>

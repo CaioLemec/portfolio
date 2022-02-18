@@ -6,8 +6,8 @@ import omini from "../../images/5.png";
 import crypto from "../../images/6.png";
 import Hover from "react-3d-hover";
 import { FaArrowRight } from "react-icons/fa";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import {
   PortfolioContainer,
@@ -25,8 +25,8 @@ import { useEffect } from "react";
 
 const SectionPortfolio = () => {
   useEffect(() => {
-    AOS.init({duration: 2000})
-  }, [])
+    AOS.init({ duration: 2000 });
+  }, []);
 
   return (
     <PortfolioContainer id="portfolio" data-aos="fade-right">
@@ -42,7 +42,7 @@ const SectionPortfolio = () => {
                   target="_blank"
                   href="https://github.com/CaioLemec/Aufood"
                 >
-                  <FaArrowRight className="icon-button"  size ={25}/>
+                  <FaArrowRight className="icon-button" size={25} />
                 </CardButtonWrapper>
               </CardDescription>
               <Hover scale={1.1} perspective={900} speed={500}>
@@ -57,7 +57,7 @@ const SectionPortfolio = () => {
                   target="_blank"
                   href="https://github.com/CaioLemec/Omni-tech"
                 >
-                  <FaArrowRight className="icon-button"  size ={25}/>
+                  <FaArrowRight className="icon-button" size={25} />
                 </CardButtonWrapper>
               </CardDescription>
               <Hover scale={1.1} perspective={900} speed={500}>
@@ -72,7 +72,7 @@ const SectionPortfolio = () => {
                   target="_blank"
                   href="https://github.com/CaioLemec/crypto-monitor"
                 >
-                  <FaArrowRight className="icon-button"  size ={25}/>
+                  <FaArrowRight className="icon-button" size={25} />
                 </CardButtonWrapper>
               </CardDescription>
               <Hover scale={1.1} perspective={900} speed={500}>
@@ -87,7 +87,7 @@ const SectionPortfolio = () => {
                   target="_blank"
                   href="https://github.com/CaioLemec/association-game"
                 >
-                  <FaArrowRight className="icon-button"  size ={25}/>
+                  <FaArrowRight className="icon-button" size={25} />
                 </CardButtonWrapper>
               </CardDescription>
               <Hover scale={1.1} perspective={900} speed={500}>
@@ -102,7 +102,7 @@ const SectionPortfolio = () => {
                   target="_blank"
                   href="https://github.com/CaioLemec/chat_app"
                 >
-                  <FaArrowRight className="icon-button"  size ={25}/>
+                  <FaArrowRight className="icon-button" size={25} />
                 </CardButtonWrapper>
               </CardDescription>
               <Hover scale={1.1} perspective={900} speed={500}>
@@ -117,7 +117,7 @@ const SectionPortfolio = () => {
                   target="_blank"
                   href="https://github.com/CaioLemec/web_scraper"
                 >
-                  <FaArrowRight className="icon-button"  size ={25}/>
+                  <FaArrowRight className="icon-button" size={25} />
                 </CardButtonWrapper>
               </CardDescription>
               <Hover scale={1.1} perspective={900} speed={500}>

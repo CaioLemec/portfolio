@@ -130,7 +130,7 @@ export const SubmitInput = styled.input`
   transition: 0.2s;
 
   &:not(:disabled):hover {
-    // if button !disable do Hover.
+    /* if button !disable do Hover. */
     filter: brightness(0.8);
   }
 
@@ -145,13 +145,13 @@ export const ErrorToastDiv = styled.div`
   top: 5rem;
   right: 0rem;
   color: ${(props) => props.theme.colors.contrast};
-  background: #EA1220;
+  background: #ea1220;
   width: 20rem;
   height: 4rem;
   border-radius: 0.25rem;
   display: flex;
   font-weight: bold;
-  font-size: 1.0250rem;
+  font-size: 1.025rem;
   align-items: center;
   justify-content: center;
   animation: PopingIn 8s linear;
@@ -198,13 +198,13 @@ export const SucessToastDiv = styled.div`
   top: 5rem;
   right: 0rem;
   color: ${(props) => props.theme.colors.contrast};
-  background: #1AC247;
+  background: #1ac247;
   width: 20rem;
   height: 4rem;
   border-radius: 0.25rem;
   display: flex;
   font-weight: bold;
-  font-size: 1.0250rem;
+  font-size: 1.025rem;
   align-items: center;
   justify-content: center;
   animation: PopingIn 8s linear;
@@ -245,4 +245,3 @@ export const SucessToastDiv = styled.div`
     }
   }
 `;
-

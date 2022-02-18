@@ -10,13 +10,13 @@ export const AboutMapWrapper = styled.div`
   background-color: purple;
 
   .leaflet-container {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
   }
 
   .leaflet-tile-pane {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
   }
 
   @media screen and (max-width: 800px) {
