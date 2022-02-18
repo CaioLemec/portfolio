@@ -4,7 +4,7 @@ import { Link as LinkS } from "react-scroll";
 
 export const SidebarContainer = styled.nav<{ isOpen: boolean }>`
   position: fixed;
-  z-index: 999;
+  z-index: 1005;
   width: 100%;
   height: 100%;
   background: ${(props) => props.theme.colors.background};
@@ -67,3 +67,41 @@ export const SidebarLink = styled(LinkS)`
     font-weight: bold;
   }
 `;
+
+export const SidebarFooter = styled.p`
+  position: absolute;
+  bottom: 1rem;
+  margin: 0 auto;
+  width: 100%;
+  font-size: 0.9rem;
+`;
+
+export const SidebarBtn = styled.nav`
+  position: absolute;
+  top: 1rem;
+  width: 100%;
+  right: -1.5rem;
+  font-size: 2rem;
+  cursor: pointer;
+  outline: none;
+  color: ${(props) => props.theme.colors.fontColor};
+`;
+
+export const SidebarBtnLink = styled.button`
+  background: transparent;
+  white-space: nowrap;
+  padding: 10px;
+  color: ${(props) => props.theme.colors.fontColor};
+  font-size: 16px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    color: ${(props) => props.theme.colors.fontColor};
+  }
+`;
+
