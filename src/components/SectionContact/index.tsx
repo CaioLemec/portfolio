@@ -15,6 +15,7 @@ import "aos/dist/aos.css";
 import {
   ContactContainer,
   MaxWidthLimitWrapper,
+  ContactTitle,
   ContactContent,
   ImageWrapper,
   PaperPlanImg,
@@ -92,6 +93,7 @@ const SectionContact = () => {
     <ContactContainer id="contact">
       <MaxWidthLimitWrapper>
         <ContactContent data-aos="fade-right">
+        <ContactTitle>Contact me</ContactTitle>
           <ImageWrapper>
             {theme.name === "first" ? (
               <PaperPlanImg src={emailLight} alt="paper plan" />
