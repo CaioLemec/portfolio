@@ -77,12 +77,11 @@ export const Description = styled.div`
   }
 
   a {
+    color: ${(props) => props.theme.colors.fontColor};
     text-decoration: none;
     margin-left: 1rem;
     font-weight: bold;
-    color: ${(props) => props.theme.colors.fontColor};
     animation: colorChange 2s infinite;
-
     &:hover {
       filter: brightness(0.8);
     }

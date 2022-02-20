@@ -111,7 +111,7 @@ export const MyPictureWrapper = styled.div`
   justify-content: center;
   padding: 0 30px;
 
-  @media screen and (max-width: 871px) {
+  @media screen and (max-width: 885px) {
     display: none;
   }
 `;

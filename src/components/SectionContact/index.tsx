@@ -72,7 +72,7 @@ const SectionContact = () => {
   const onSubmit: SubmitHandler<FormData> = (data) => {
     emailjs
       .send(
-        `${process.env.REACT_APP_EMAIL_JS_SERVICE_ID}`,
+        `${process.env.REACT_APP_EMAIL_JS_SERVICE_IDs}`,
         `${process.env.REACT_APP_EMAIL_JS_TEMPLATE_ID}`,
         data,
         `${process.env.REACT_APP_EMAIL_JS_USER_ID}`
@@ -150,8 +150,8 @@ const SectionContact = () => {
           </ContactFormWrapper>
           {sucessToastControl && <SucessToast />}
           {failToastControl && <ErrorToast />}
+          <Footer />
         </ContactContent>
-        <Footer />
       </MaxWidthLimitWrapper>
     </ContactContainer>
   );

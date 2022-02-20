@@ -1,3 +1,5 @@
+import { BsSun, BsMoon } from "react-icons/bs";
+import { useTheme } from "../../hooks/theme";
 import {
   SidebarContainer,
   Icon,
@@ -9,8 +11,6 @@ import {
   SidebarBtn,
   SidebarBtnLink,
 } from "./sidebarElements";
-import { BsSun, BsMoon } from "react-icons/bs";
-import { useTheme } from "../../hooks/theme";
 
 interface SidebarProps {
   isOpen: boolean;
@@ -27,17 +27,17 @@ function Sidebar({ isOpen, handleToggle }: SidebarProps) {
   return (
     <>
       <SidebarContainer isOpen={isOpen}>
-      <SidebarBtn onClick={handleToggleTheme}>
-              {theme.name !== "first" ? (
-                <SidebarBtnLink>
-                  <BsMoon />
-                </SidebarBtnLink>
-              ) : (
-                <SidebarBtnLink>
-                  <BsSun />
-                </SidebarBtnLink>
-              )}
-            </SidebarBtn>
+        <SidebarBtn onClick={handleToggleTheme}>
+          {theme.name !== "first" ? (
+            <SidebarBtnLink>
+              <BsMoon />
+            </SidebarBtnLink>
+          ) : (
+            <SidebarBtnLink>
+              <BsSun />
+            </SidebarBtnLink>
+          )}
+        </SidebarBtn>
         <Icon>
           <CloseIcon onClick={handleToggle} />
         </Icon>

@@ -6,9 +6,11 @@ export const FooterWrapper = styled.div`
   justify-content: center;
   align-items: center;
   font-size: 1rem;
-  transform: translateY(-100%);
-  margin: 0 auto;
   bottom: 0;
+  width: 100%;
+  position: absolute;
+  margin: 0 auto;
+
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
   }

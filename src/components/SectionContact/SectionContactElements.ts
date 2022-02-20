@@ -4,7 +4,7 @@ export const ContactContainer = styled.div`
   background: ${(props) => props.theme.colors.background};
   color: ${(props) => props.theme.colors.fontColor};
   width: 100%;
-  height: calc(100vh - 80px);
+  height: 100%;
   overflow: hidden;
   position: relative;
 `;
@@ -19,22 +19,29 @@ export const MaxWidthLimitWrapper = styled.div`
 
 export const ContactTitle = styled.div`
   color: ${(props) => props.theme.colors.fontColor};
-  margin-top: 1rem;
+  margin-top: 2rem;
   font-size: 1.125rem;
   text-align: left;
   font-weight: bold;
   margin-bottom: 1rem;
   position: absolute;
   top: 0;
-  margin-top: 10%;
 
-  @media screen and (min-width: 550px) {
-    display: none;
+  @media screen and (max-width: 1173px) {
+    font-size: 1.5rem;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 1rem;
+  }
+
+  @media screen and (max-width: 375px) {
+    font-size: 0.825rem;
   }
 `;
 
 export const ContactContent = styled.div`
-  height: 100%;
+  height: 56rem;
   width: 100%;
   display: flex;
   align-items: center;

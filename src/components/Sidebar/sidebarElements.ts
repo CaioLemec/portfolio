@@ -104,4 +104,3 @@ export const SidebarBtnLink = styled.button`
     color: ${(props) => props.theme.colors.fontColor};
   }
 `;
-
