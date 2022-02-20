@@ -22,26 +22,28 @@ export const ContactTitle = styled.div`
   font-size: 1.125rem;
   text-align: left;
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin-top: 5rem;
   position: absolute;
   top: 0;
 
   @media screen and (max-width: 1173px) {
     font-size: 1.5rem;
+    margin-top: 4rem;
   }
 
   @media screen and (max-width: 500px) {
     font-size: 1rem;
+    margin-top: 3rem;
   }
 
   @media screen and (max-width: 375px) {
     font-size: 0.825rem;
+    margin-top: 2rem;
   }
 `;
 
 export const ContactContent = styled.div`
   height: 56rem;
-  margin-top: 2rem;
   width: 100%;
   display: flex;
   align-items: center;

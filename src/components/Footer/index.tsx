@@ -1,5 +1,4 @@
 import { FooterWrapper, FooterContainer } from "./FooterElements";
-
 import SocialBtn from "../SectionHome/SocialBtn";
 
 const Footer = () => {
