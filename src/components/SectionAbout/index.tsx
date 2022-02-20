@@ -21,9 +21,9 @@ interface Repository {
 }
 
 const downloadResumeBR =
-  "https://drive.google.com/uc?export=download&id=1nqS2rf9Azpp1o_2L8wPTQ5R2rlbJmUXW";
+  "https://drive.google.com/uc?export=download&id=1AVyxtz7S2s70PRL1-LObWJmFAi6SC6W8";
 const downloadResumeUS =
-  "https://drive.google.com/uc?export=download&id=1nqS2rf9Azpp1o_2L8wPTQ5R2rlbJmUXW";
+  "https://drive.google.com/uc?export=download&id=1PYgmBZ1zHVMLbFcPrLLyEnKsPl6XplJ6";
 
 const SectionAbout = () => {
   const [repositories, setRepositories] = useState<Repository[]>([]);
@@ -70,7 +70,7 @@ const SectionAbout = () => {
             <DescriptionTitle>Resume :</DescriptionTitle>
             <WrapperResumeBtn>
               <ResumeBtn
-                href={downloadResumeBR}
+                href={downloadResumeUS}
                 target="_blank"
                 rel="noopener noreferrer"
                 download
@@ -78,7 +78,7 @@ const SectionAbout = () => {
                 en-US
               </ResumeBtn>
               <ResumeBtn
-                href={downloadResumeUS}
+                href={downloadResumeBR}
                 target="_blank"
                 rel="noopener noreferrer"
                 download
