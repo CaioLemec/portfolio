@@ -17,7 +17,7 @@
 
 ## :desktop_computer: Project
 
-The purpose of creating <Strong>My Portfolio 1.0v</Strong> is to challenge me and put knowledge in frontend into practice.
+The purpose of creating <Strong>My Portfolio 1.0v</Strong> is to challenge myself and put knowledge in frontend into practice.
 
 I'm one of those who believe that you only learn by doing, that's why I tried to use several features in this project and I was able to learn a lot about React, Typescript and Styled-components.
 
