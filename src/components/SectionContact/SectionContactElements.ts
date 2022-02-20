@@ -22,7 +22,7 @@ export const ContactTitle = styled.div`
   font-size: 1.125rem;
   text-align: left;
   font-weight: bold;
-  margin-top: 5rem;
+  margin-top: 2rem;
   position: absolute;
   top: 0;
 
@@ -43,7 +43,8 @@ export const ContactTitle = styled.div`
 `;
 
 export const ContactContent = styled.div`
-  height: 56rem;
+  height: 100%;
+  padding-top: 4rem;
   width: 100%;
   display: flex;
   align-items: center;
@@ -61,7 +62,8 @@ export const ImageWrapper = styled.div`
   justify-content: center;
   width: 100%;
   height: 100%;
-  padding-right: 5rem;
+  margin-right: 5rem;
+  margin-bottom: calc(8rem +80px);
 
   @media screen and (max-width: 1080px) {
     display: none;
@@ -93,6 +95,7 @@ export const ContactFormWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: calc(8rem +80px);
 `;
 
 export const ContactForm = styled.form`

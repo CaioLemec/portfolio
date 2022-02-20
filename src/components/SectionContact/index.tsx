@@ -4,7 +4,6 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import emailjs from "emailjs-com";
-import Footer from "../Footer";
 import SucessToast from "./SucessToast";
 import ErrorToast from "./ErrorToast";
 import emailLight from "../../images/emailLight.png";
@@ -72,7 +71,7 @@ const SectionContact = () => {
   const onSubmit: SubmitHandler<FormData> = (data) => {
     emailjs
       .send(
-        `${process.env.REACT_APP_EMAIL_JS_SERVICE_IDs}`,
+        `${process.env.REACT_APP_EMAIL_JS_SERVICE_ID}`,
         `${process.env.REACT_APP_EMAIL_JS_TEMPLATE_ID}`,
         data,
         `${process.env.REACT_APP_EMAIL_JS_USER_ID}`
@@ -150,7 +149,6 @@ const SectionContact = () => {
           </ContactFormWrapper>
           {sucessToastControl && <SucessToast />}
           {failToastControl && <ErrorToast />}
-          <Footer />
         </ContactContent>
       </MaxWidthLimitWrapper>
     </ContactContainer>
