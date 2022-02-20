@@ -19,7 +19,6 @@ export const MaxWidthLimitWrapper = styled.div`
 
 export const ContactTitle = styled.div`
   color: ${(props) => props.theme.colors.fontColor};
-  margin-top: 2rem;
   font-size: 1.125rem;
   text-align: left;
   font-weight: bold;
@@ -42,11 +41,16 @@ export const ContactTitle = styled.div`
 
 export const ContactContent = styled.div`
   height: 56rem;
+  margin-top: 2rem;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+
+  @media screen and (max-width: 768px) {
+    height: 40rem;
+  }
 `;
 
 export const ImageWrapper = styled.div`
