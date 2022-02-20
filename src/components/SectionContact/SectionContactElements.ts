@@ -6,7 +6,6 @@ export const ContactContainer = styled.div`
   width: 100%;
   height: 100%;
   overflow: hidden;
-  position: relative;
 `;
 
 export const MaxWidthLimitWrapper = styled.div`
@@ -15,6 +14,7 @@ export const MaxWidthLimitWrapper = styled.div`
   margin: 0 auto;
   padding: 0 30px;
   max-width: 1440px;
+  position: relative;
 `;
 
 export const ContactTitle = styled.div`
@@ -165,11 +165,11 @@ export const SubmitInput = styled.input`
 `;
 
 export const ErrorToastDiv = styled.div`
-  position: absolute;
-  top: 5rem;
-  right: 0rem;
   color: ${(props) => props.theme.colors.contrast};
   background: #ea1220;
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
   width: 20rem;
   height: 4rem;
   border-radius: 0.25rem;
@@ -178,51 +178,33 @@ export const ErrorToastDiv = styled.div`
   font-size: 1.025rem;
   align-items: center;
   justify-content: center;
-  animation: PopingIn 8s linear;
+  animation: PopingIn 8s;
 
   @keyframes PopingIn {
     0% {
-      transform: translateX(100%);
-    }
-    10% {
-      transform: translateX(0%);
-    }
-    20% {
-      transform: translateX(0%);
-    }
-    30% {
-      transform: translateX(0%);
+      transform: translateY(-100%);
     }
     40% {
-      transform: translateX(0%);
+      transform: translateY(0%);
     }
     50% {
-      transform: translateX(0%);
+      transform: translateY(0%);
     }
     60% {
-      transform: translateX(0%);
-    }
-    70% {
-      transform: translateX(0%);
-    }
-    80% {
-      transform: translateX(0%);
-    }
-    90% {
-      transform: translateX(0%);
+      transform: translateY(0%);
     }
     100% {
-      transform: translateX(100%);
+      transform: translateY(-100%);
     }
   }
 `;
 
 export const SucessToastDiv = styled.div`
-  position: absolute;
-  top: 5rem;
-  right: 0rem;
   color: ${(props) => props.theme.colors.contrast};
   background: #1ac247;
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
   width: 20rem;
   height: 4rem;
   border-radius: 0.25rem;
@@ -231,41 +213,23 @@ export const SucessToastDiv = styled.div`
   font-size: 1.025rem;
   align-items: center;
   justify-content: center;
-  animation: PopingIn 8s linear;
+  animation: PopingIn 8s;
 
   @keyframes PopingIn {
     0% {
-      transform: translateX(100%);
-    }
-    10% {
-      transform: translateX(0%);
-    }
-    20% {
-      transform: translateX(0%);
-    }
-    30% {
-      transform: translateX(0%);
+      transform: translateY(-100%);
     }
     40% {
-      transform: translateX(0%);
+      transform: translateY(0%);
     }
     50% {
-      transform: translateX(0%);
+      transform: translateY(0%);
     }
     60% {
-      transform: translateX(0%);
-    }
-    70% {
-      transform: translateX(0%);
-    }
-    80% {
-      transform: translateX(0%);
-    }
-    90% {
-      transform: translateX(0%);
+      transform: translateY(0%);
     }
     100% {
-      transform: translateX(100%);
+      transform: translateY(-100%);
     }
   }
 `;
