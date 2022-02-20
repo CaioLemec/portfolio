@@ -4,7 +4,7 @@ export const ContactContainer = styled.div`
   background: ${(props) => props.theme.colors.background};
   color: ${(props) => props.theme.colors.fontColor};
   width: 100%;
-  height: 100%;
+  height: calc(100vh - 160px);
   overflow: hidden;
 `;
 
@@ -22,13 +22,12 @@ export const ContactTitle = styled.div`
   font-size: 1.125rem;
   text-align: left;
   font-weight: bold;
-  margin-top: 2rem;
+  margin-top: 3rem;
   position: absolute;
   top: 0;
 
   @media screen and (max-width: 1173px) {
-    font-size: 1.5rem;
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
 
   @media screen and (max-width: 500px) {
