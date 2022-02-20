@@ -50,7 +50,7 @@ export const DescriptionAboutWrapper = styled.div`
   padding: 0 30px;
   z-index: 2;
 
-  @media screen and (max-width: 871px) {
+  @media screen and (max-width: 885px) {
     justify-content: center;
     align-items: center;
   }
@@ -134,7 +134,7 @@ export const MyPictureContainer = styled.div`
     bottom: 0;
     left: 0;
     position: absolute;
-    border: 6px solid ${(props) => props.theme.colors.background};
+    border: 5px solid ${(props) => props.theme.colors.background};
     border-radius: 100%;
     border-top-color: ${(props) => props.theme.colors.highLight};
     animation: isRotating 3s infinite;

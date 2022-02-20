@@ -91,7 +91,8 @@ const SectionContact = () => {
   return (
     <ContactContainer id="contact">
       <MaxWidthLimitWrapper>
-        <ContactContent data-aos="fade-right">
+        <ContactContent >
+        {/* data-aos="fade-right" */}
           <ContactTitle>Contact me 👋</ContactTitle>
           <ImageWrapper>
             {theme.name === "first" ? (
