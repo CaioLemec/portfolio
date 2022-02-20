@@ -32,6 +32,7 @@ I wanted to create an authentic and special page, it was designed and developed 
 <img src="./public/images/readme/1280x720.gif" width="68%"/>
 <img src="./public/images/readme/414x896.gif" width="20%"/>
 </p>
+<p align="center">You can also check <a href="https://portfolio-caiolemec.vercel.app/">Deploy</a>.</p>
 <hr>
 
 ## :technologist: Technologies
