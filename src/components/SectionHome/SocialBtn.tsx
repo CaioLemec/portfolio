@@ -6,6 +6,7 @@ import {
   BsLinkedin,
   BsFacebook,
   BsSpotify,
+  BsInstagram,
 } from "react-icons/bs";
 
 const SocialBtn = () => {
@@ -42,9 +43,9 @@ const SocialBtn = () => {
       <SocialBtnLink
         rel="noreferrer"
         target="_blank"
-        href="https://open.spotify.com/user/caio.lemec"
+        href="https://www.instagram.com/caiolemec/"
       >
-        <BsSpotify />
+        <BsInstagram />
       </SocialBtnLink>
     </SocialBtnWrapper>
   );
