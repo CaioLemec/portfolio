@@ -5,7 +5,6 @@ import {
   BsTwitter,
   BsLinkedin,
   BsFacebook,
-  BsSpotify,
   BsInstagram,
 } from "react-icons/bs";
 
