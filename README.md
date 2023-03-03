@@ -19,9 +19,9 @@
 
 The purpose of creating <Strong>My Portfolio 1.0v</Strong> is to challenge myself and put knowledge in frontend into practice.
 
-I'm one of those who believe that you only learn by doing, that's why I tried to use several features in this project and I was able to learn a lot about React, Typescript and Styled-components.
+I am among those who adhere to the belief that learning can only be achieved through practice. Therefore, I endeavored to utilize multiple features in this project and, as a result, gained a wealth of knowledge regarding React, Typescript, and Styled-components.
 
-I wanted to create an authentic and special page, it was designed and developed without the help of more experienced developers so, if you see something in my code that I can improve I would love to hear from you. I think every feedback is an opportunity to improve so I'm waiting for your PR or contact. 💌
+My intention was to craft a unique and exceptional webpage, which I designed and developed independently, without assistance from more seasoned professionals. Consequently, if you observe any areas within my code that could be enhanced, I would greatly appreciate your input. I view all feedback as an opportunity to refine my skills, and I eagerly anticipate any pull requests or messages from you.💌
 
 >`Alert 1:` Due to some features in the styling, it is not recommended use olders browsers.
 
